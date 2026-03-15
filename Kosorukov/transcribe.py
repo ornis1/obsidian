@@ -6,10 +6,7 @@
 """
 
 import argparse
-import shutil
-import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 
@@ -20,27 +17,14 @@ def find_mp3_files(root: Path) -> list[Path]:
     return sorted(root.rglob("*.mp3"))
 
 
-def transcribe(audio_path: Path, model: str, tmp_dir: Path) -> str:
-    result = subprocess.run(
-        [
-            "mlx_whisper",
-            str(audio_path),
-            "--model", model,
-            "--language", "ru",
-            "--output-dir", str(tmp_dir),
-            "--output-format", "txt",
-        ],
-        capture_output=True,
-        text=True,
+def transcribe(audio_path: Path, model: str) -> str:
+    import mlx_whisper
+    result = mlx_whisper.transcribe(
+        str(audio_path),
+        path_or_hf_repo=model,
+        language="ru",
     )
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "mlx_whisper завершился с ошибкой")
-
-    txt_file = tmp_dir / (audio_path.stem + ".txt")
-    if not txt_file.exists():
-        raise FileNotFoundError(f"Ожидаемый файл не найден: {txt_file}")
-
-    return txt_file.read_text(encoding="utf-8").strip()
+    return "\n".join(seg["text"].strip() for seg in result.get("segments", [])).strip()
 
 
 def main():
@@ -80,17 +64,14 @@ def main():
 
         print(f"[{i}/{total}] Транскрибирую: {rel} ... ", end="", flush=True)
 
-        tmp_dir = Path(tempfile.mkdtemp())
         try:
-            text = transcribe(audio_path, args.model, tmp_dir)
+            text = transcribe(audio_path, args.model)
             md_path.write_text(text, encoding="utf-8")
             print("готово")
             done += 1
         except Exception as e:
             print(f"ОШИБКА: {e}")
             errors.append((str(rel), str(e)))
-        finally:
-            shutil.rmtree(tmp_dir, ignore_errors=True)
 
     print(f"\n--- Итого ---")
     print(f"Транскрибировано: {done}")
