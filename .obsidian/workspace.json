@@ -11,10 +11,14 @@
             "id": "3e8f308ae8c6be8f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Kosorukov/3. Подготовка к практике/3_Проявляй_перфонифицированный_интерес.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "3_Проявляй_перфонифицированный_интерес"
             }
           }
         ]
@@ -190,6 +194,7 @@
   },
   "active": "3e8f308ae8c6be8f",
   "lastOpenFiles": [
+    "Kosorukov/4. Знакомства/15 Какие ошибки бывают.md",
     "Kosorukov/1. Баланс/Баланс.md",
     "Kosorukov/3. Подготовка к практике/10 Гормональный фон.md",
     "Kosorukov/2. Харизма/1.md",
@@ -216,7 +221,6 @@
     "Kosorukov/2. Харизма/Наглость второе счастьеmp4.md",
     "Kosorukov/2. Харизма/5mp4.md",
     "Kosorukov/2. Харизма/4mp4.md",
-    "Kosorukov/2. Харизма/3mp4.md",
     "Kosorukov/1. Баланс/Баланс.mp3",
     "Home"
   ]
