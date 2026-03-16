@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "d23d6dcf66736875",
+        "id": "53a186063b4a84a9",
         "type": "tabs",
         "children": [
           {
-            "id": "0163d1ad76aa5529",
+            "id": "3e8f308ae8c6be8f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kosorukov/1. Баланс/Баланс.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Баланс"
-            }
-          },
-          {
-            "id": "c4d00fbfd8a58443",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kosorukov/2. Харизма/1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -207,8 +188,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4d00fbfd8a58443",
+  "active": "3e8f308ae8c6be8f",
   "lastOpenFiles": [
+    "Kosorukov/1. Баланс/Баланс.md",
+    "Kosorukov/3. Подготовка к практике/10 Гормональный фон.md",
+    "Kosorukov/2. Харизма/1.md",
+    "Kosorukov/4. Знакомства/1.md",
     "Kosorukov/3. Подготовка к практике/9 Знакомства в два касания.md",
     "Kosorukov/3. Подготовка к практике/8_Адаптация_к_стрессовым_ситуациям.md",
     "Kosorukov/3. Подготовка к практике/7 Безусловная симпатия.md",
@@ -224,18 +209,14 @@
     "Kosorukov/3. Подготовка к практике/13 знакомство через комплимент.md",
     "Kosorukov/3. Подготовка к практике/12 Сексуальность.md",
     "Kosorukov/3. Подготовка к практике/11 обратная связь.md",
-    "Kosorukov/3. Подготовка к практике/10 Гормональный фон.md",
     "Kosorukov/3. Подготовка к практике/1 Внутреннее и внешнее внимание.md",
     "Kosorukov/2. Харизма/1.mp3",
-    "Kosorukov/2. Харизма/1.md",
     "Kosorukov/1. Баланс/Знакомства в кафе.md",
     "Kosorukov/2. Харизма/Правило номер 0mp4.md",
     "Kosorukov/2. Харизма/Наглость второе счастьеmp4.md",
     "Kosorukov/2. Харизма/5mp4.md",
     "Kosorukov/2. Харизма/4mp4.md",
     "Kosorukov/2. Харизма/3mp4.md",
-    "Kosorukov/2. Харизма/2mp4.md",
-    "Kosorukov/1. Баланс/Быстрое соблазнение.md",
     "Kosorukov/1. Баланс/Баланс.mp3",
     "Home"
   ]
