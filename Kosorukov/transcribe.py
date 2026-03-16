@@ -10,7 +10,8 @@ import sys
 from pathlib import Path
 
 
-DEFAULT_MODEL = "mlx-community/whisper-large-v3-mlx"
+# DEFAULT_MODEL = "mlx-community/whisper-large-v3-mlx"
+DEFAULT_MODEL = "mlx-community/whisper-large-v3-mlx-4bit"
 
 
 def find_mp3_files(root: Path) -> list[Path]:
